@@ -1,0 +1,10 @@
+type Mutation {
+  archive_posts(
+    age_in_year: Int!
+  ): ArchivePostsOutput
+}
+
+type ArchivePostsOutput {
+  count: Int
+}
+

@@ -1,0 +1,18 @@
+table:
+  name: foods
+  schema: public
+event_triggers:
+  - name: foods_trigger_events
+    definition:
+      delete:
+        columns: '*'
+      enable_manual: false
+      insert:
+        columns: '*'
+      update:
+        columns: '*'
+    retry_conf:
+      interval_sec: 10
+      num_retries: 0
+      timeout_sec: 60
+    webhook: http://host.docker.internal:3000

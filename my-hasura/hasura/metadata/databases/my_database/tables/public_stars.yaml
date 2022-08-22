@@ -1,0 +1,3 @@
+table:
+  name: stars
+  schema: public

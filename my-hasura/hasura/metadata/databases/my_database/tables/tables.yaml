@@ -1,0 +1,5 @@
+- "!include public_coments.yaml"
+- "!include public_foods.yaml"
+- "!include public_likes.yaml"
+- "!include public_stars.yaml"
+- "!include public_users.yaml"

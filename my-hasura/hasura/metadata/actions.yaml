@@ -1,0 +1,11 @@
+actions:
+  - name: archive_posts
+    definition:
+      kind: synchronous
+      handler: http://host.docker.internal:3000
+custom_types:
+  enums: []
+  input_objects: []
+  objects:
+    - name: ArchivePostsOutput
+  scalars: []
